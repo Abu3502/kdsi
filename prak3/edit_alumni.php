@@ -16,43 +16,69 @@ $data = mysqli_fetch_array($query);
 <h3>Update Data Alumni</h3>
 <hr/>
 <form action = "" method = "post">
-	<input type = "hidden" name = "id" value = "<?= $data['id'] ?>"> 
-	<label for = "NIM">NIM</label>
-	<input type = "text" name = "NIM" value = "<?= $data['NIM'] ?>">
-<br>
-	<label for = "NIK">NIK</label>
-	<input type = "text" name = "NIK" value = "<?= $data['NIK'] ?>">
-<br>
-	<label for = "NAMA">NAMA</label>
-	<input type = "text" name = "NAMA" value = "<?= $data['NAMA'] ?>">
-<br>
-	<label for = "TTL">TTL</label>
-	<input type = "text" name = "TTL" value = "<?= $data['TTL'] ?>">
-<br>
-	<label for = "ALAMAT">ALAMAT</label>
-	<input type = "text" name = "ALAMAT" value = "<?= $data['ALAMAT'] ?>">
-<br>
-	<label for = "NAMA_AYAH">NAMA AYAH</label>
-	<input type = "text" name = "NAMA_AYAH" value = "<?= $data['NAMA_AYAH'] ?>">
-<br>
-	<label for = "NAMA_IBU">NAMA IBU</label>
-	<input type = "text" name = "NAMA_IBU" value = "<?= $data['NAMA_IBU'] ?>">
-<br>
-	<label for = "JUDUL_SKRIPSI">JUDUL SKRIPSI</label>
-	<input type = "text" name = "JUDUL_SKRIPSI" value = "<?= $data['JUDUL_SKRIPSI'] ?>">
-<br>
-	<label for = "TAHUN_MASUK">TAHUN MASUK</label>
-	<input type = "text" name = "TAHUN_MASUK" value = "<?= $data['TAHUN_MASUK'] ?>">
-<br>
-	<label for = "TAHUN_LULUS">TAHUN LULUS</label>
-	<input type = "text" name = "TAHUN_LULUS" value = "<?= $data['TAHUN_LULUS'] ?>">
-<br>
-	<label for = "PEKERJAAN">PEKERJAAN</label>
-	<input type = "text" name = "PEKERJAAN" value = "<?= $data['PEKERJAAN'] ?>">
-<br>
-
-<input type = "submit" value = "simpan">
-
+<table>
+<tr>
+<input type = "hidden" name = "id" value = "<?= $data['id'] ?>">
+</tr>
+<tr>
+<td>NIM</td>
+<td></td>
+<td><input type="text" name="NIM" value= "<?= $data['NIM'] ?>">
+</tr>
+<tr>
+<td>NIK</td>
+<td></td>
+<td><input type="text" name="NIK" value= "<?= $data['NIK'] ?>">
+</tr>
+<tr>
+<td>NAMA</td>
+<td></td>
+<td><input type="text" name="NAMA" value= "<?= $data['NAMA'] ?>">
+</tr>
+<tr>
+<td>TTL</td>
+<td></td>
+<td><input type="text" name="TTL" value= "<?= $data['TTL'] ?>">
+</tr>
+<tr>
+<td>ALAMAT</td>
+<td></td>
+<td><input type="text" name="ALAMAT" value= "<?= $data['ALAMAT'] ?>">
+</tr>
+<tr>
+<td>NAMA_AYAH</td>
+<td></td>
+<td><input type="text" name="NAMA_AYAH" value= "<?= $data['NAMA_AYAH'] ?>">
+</tr>
+<tr>
+<td>NAMA_IBU</td>
+<td></td>
+<td><input type="text" name="NAMA_IBU" value= "<?= $data['NAMA_IBU'] ?>">
+</tr>
+<tr>
+<td>JUDUL_SKRIPSI</td>
+<td></td>
+<td><input type="text" name="JUDUL_SKRIPSI" value= "<?= $data['JUDUL_SKRIPSI'] ?>">
+</tr>
+<tr>
+<td>TAHUN_MASUK</td>
+<td></td>
+<td><input type="text" name="TAHUN_MASUK" value= "<?= $data['TAHUN_MASUK'] ?>">
+</tr>
+<tr>
+<td>TAHUN_LULUS</td>
+<td></td>
+<td><input type="text" name="TAHUN_LULUS" value= "<?= $data['TAHUN_LULUS'] ?>">
+</tr>
+<tr>
+<td>PEKERJAAN</td>
+<td></td>
+<td><input type="text" name="PEKERJAAN" value= "<?= $data['PEKERJAAN'] ?>">
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><input type = "submit" value = "Simpan">
 </form>
 
 <?php
